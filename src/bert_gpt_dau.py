@@ -120,12 +120,13 @@ class BERTGPT2DAUModel(torch.nn.Module):
                 probs = torch.torch.nn.functional.softmax(logits, dim=-1)
 
                 if use_sample:
-                    generated_token = torch.multinomial(probs, num_samples=1)
+                    generated_token = torch.multinomial(
+                        probs.squeeze(0), num_samples=1).squeeze(0)
                 else:
-                    generated_token = torch.argmax(probs)
-                prev = generated_token.unsqueeze(0)
+                    generated_token = torch.argmax(probs).unsqueeze(0)
+                prev = generated_token
                 output_tokens = torch.cat(
-                    [output_tokens, generated_token.unsqueeze(0)]
+                    [output_tokens, generated_token]
                 )
 
         return output_tokens.tolist()
@@ -165,7 +166,7 @@ if __name__ == "__main__":
 
     generated_gpt_tokens = head_model.generate(
         highlight, context_gpt_tokens,
-        gen_length=30, use_sample=True, temperature=1
+        gen_length=30, use_sample=False, temperature=1
     )
 
     print(gpt_encoder.decode(generated_gpt_tokens))

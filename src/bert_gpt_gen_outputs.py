@@ -9,18 +9,24 @@ from concurrent.futures import ThreadPoolExecutor
 from pprint import pprint
 
 # CONFIG ###################################################
-MODEL_GETTER = bert_gpt_dau.get_bert_gpt_dau_model
-MODEL_TYPE_STR = 'bert_gpt_dau'
+MODEL_GETTER = bert_gpt_lm.get_bert_gpt_lm_model
+MODEL_TYPE_STR = 'bert_gpt_lm'
 POOL_METHOD = 'max'
-WITH_PROMPT = True 
+WITH_PROMPT = False
 SAMPLE_TEMPERATURE = 0.7
 SAVE_EVERY_N_ROWS = 50
 GENERATE_LENGTH = 128
 ############################################################
 
+# w prompt dauavg daumax lmmax lmavg
+# wo prompt dauavg daumax
+
 SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
-SAVE_CSV_FILENAME = f'{MODEL_TYPE_STR}_{POOL_METHOD}_{"with_prompt" if WITH_PROMPT else "without_prompt"}.csv'
-SAVE_FILEPATH = os.path.join(SCRIPT_DIR, '..', 'outputs', SAVE_CSV_FILENAME)
+SAVE_CSV_FILENAME = f'{"with_prompt" if WITH_PROMPT else "without_prompt"}.csv'
+SAVE_FILEPATH = os.path.join(
+    SCRIPT_DIR, '..', 'outputs',
+    f'{MODEL_TYPE_STR}_{POOL_METHOD}', SAVE_CSV_FILENAME
+)
 
 if __name__ == "__main__":
     print(f'[saving to {os.path.realpath(SAVE_FILEPATH)}]')
@@ -59,7 +65,7 @@ if __name__ == "__main__":
             highlight_str=highlight_str,
             context_gpt_tokens=context_gpt_tokens,
             gen_length=GENERATE_LENGTH,
-            use_sample=False,
+            use_sample=True,
             temperature=SAMPLE_TEMPERATURE
         )
         # trim off prompt

@@ -6,6 +6,8 @@ import gpt2.utils
 import torch
 import csv_dataset
 import os
+import requests
+
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -29,6 +31,12 @@ def get_gpt():
     @return gpt encoder, gpt trsnsformer (not head model, does not include lm model fc)
     '''
     print('[getting pretrained gpt2 tokenizer and model]')
+    if not os.path.exists('gpt2/gpt2-pytorch_model.bin'):
+        print("Downloading GPT-2 checkpoint...")
+        url = 'https://s3.amazonaws.com/models.huggingface.co/bert/gpt2-pytorch_model.bin'
+        r = requests.get(url, allow_redirects=True)
+        open('gpt2/gpt2-pytorch_model.bin', 'wb').write(r.content)
+
     gpt_encoder = gpt2.encoder.get_encoder()
 
     state_dict = torch.load('gpt2/gpt2-pytorch_model.bin',
