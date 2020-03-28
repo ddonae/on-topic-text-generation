@@ -11,7 +11,7 @@ from pprint import pprint
 # CONFIG ###################################################
 MODEL_GETTER = bert_gpt_lm.get_bert_gpt_lm_model
 MODEL_TYPE_STR = 'bert_gpt_lm'
-POOL_METHOD = 'max'
+POOL_METHOD = 'avg'
 WITH_PROMPT = False
 SAMPLE_TEMPERATURE = 0.7
 SAVE_EVERY_N_ROWS = 50
