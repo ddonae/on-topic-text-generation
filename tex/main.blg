@@ -8,7 +8,7 @@ Warning--empty journal in gpt
 Warning--empty journal in sparsetransformer
 You've used 16 entries,
             1791 wiz_defined-function locations,
-            534 strings with 7100 characters,
+            534 strings with 7084 characters,
 and the built_in function-call counts, 5176 in all, are:
 = -- 445
 > -- 314

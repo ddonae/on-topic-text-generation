@@ -57,10 +57,9 @@ Zhilin Yang, Zihang Dai, Yiming Yang, Jaime Carbonell, Russ~R Salakhutdinov,
   and Quoc~V Le.
 \newblock Xlnet: Generalized autoregressive pretraining for language
   understanding.
-\newblock In H.~Wallach, H.~Larochelle, A.~Beygelzimer, F.~d\textquotesingle
-  Alch\'{e}-Buc, E.~Fox, and R.~Garnett, editors, {\em Advances in Neural
-  Information Processing Systems 32}, pages 5753--5763. Curran Associates,
-  Inc., 2019.
+\newblock In H.~Wallach, H.~Larochelle, A.~Beygelzimer, F.~d'Alch\'{e} Buc,
+  E.~Fox, and R.~Garnett, editors, {\em Advances in Neural Information
+  Processing Systems 32}, pages 5753--5763. Curran Associates, Inc., 2019.
 
 \bibitem{ctrl}
 Nitish~Shirish Keskar, Bryan McCann, Lav Varshney, Caiming Xiong, and Richard

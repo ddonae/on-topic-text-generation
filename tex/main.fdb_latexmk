@@ -1,16 +1,16 @@
 # Fdb version 3
-["bibtex main"] 1585081006 "main.aux" "main.bbl" "main" 1585081006
+["bibtex main"] 1586285424 "main.aux" "main.bbl" "main" 1586285426
   "/usr/local/texlive/2019/texmf-dist/bibtex/bst/base/unsrt.bst" 1292289607 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "main.aux" 1585081006 11896 7f5f88f58c51abceb623a68baaac7ef3 "pdflatex"
-  "references.bib" 1585106122 10094 94b454d28c11ace970b331daec7762e1 ""
+  "main.aux" 1586285425 12527 9ea148cfd5a60b456c8d4877da4c5cca "pdflatex"
+  "references.bib" 1586285385 10078 31744d32e152e434c0b3a4d2b6048125 ""
   (generated)
-  "main.blg"
   "main.bbl"
-["pdflatex"] 1585081006 "/Users/junshenchen/on-topic-text-generation/tex/main.tex" "/Users/junshenchen/on-topic-text-generation/tex/main.pdf" "main" 1585081006
-  "/Users/junshenchen/on-topic-text-generation/tex/main.aux" 1585081006 11896 7f5f88f58c51abceb623a68baaac7ef3 ""
-  "/Users/junshenchen/on-topic-text-generation/tex/main.tex" 1585106122 49073 270696cfd9b97829671ebd447fba61fa ""
+  "main.blg"
+["pdflatex"] 1586285424 "/Users/junshenchen/on-topic-text-generation/tex/main.tex" "/Users/junshenchen/on-topic-text-generation/tex/main.pdf" "main" 1586285426
+  "/Users/junshenchen/on-topic-text-generation/tex/main.aux" 1586285425 12527 9ea148cfd5a60b456c8d4877da4c5cca ""
+  "/Users/junshenchen/on-topic-text-generation/tex/main.tex" 1586284827 49074 7b15ef64411576f9cc57f0171e6b1cc1 ""
   "/Users/junshenchen/on-topic-text-generation/tex/multi-head attention.png" 1585106122 43864 316d0cb965f29ebe171a956d201e8169 ""
-  "/dev/null" 1585081001 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "/dev/null" 1586285425 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
@@ -226,16 +226,16 @@
   "bergpt.png" 1585106122 83676 45295d546467bc0998839d8cdd939316 ""
   "bert_gpt_adj.png" 1585106122 24270 62e90618932e6a30a4bf3094fb0bc897 ""
   "bert_lm.png" 1585106122 31171 eff4428fa0231116f5b215997c5e2cc2 ""
-  "main.aux" 1585081006 11896 7f5f88f58c51abceb623a68baaac7ef3 "pdflatex"
-  "main.bbl" 1585081006 4518 8f921a0de5ac3511896265e3cfee895e "bibtex main"
-  "main.out" 1585081006 2803 451746e7b90fe3120a06859d0a0e6d30 "pdflatex"
-  "main.tex" 1585106122 49073 270696cfd9b97829671ebd447fba61fa ""
+  "main.aux" 1586285425 12527 9ea148cfd5a60b456c8d4877da4c5cca "pdflatex"
+  "main.bbl" 1586285424 4500 320c5f21d14967afd666d3d68e52329c "bibtex main"
+  "main.out" 1586285425 2803 451746e7b90fe3120a06859d0a0e6d30 "pdflatex"
+  "main.tex" 1586284827 49074 7b15ef64411576f9cc57f0171e6b1cc1 ""
   "multi-head attention.png" 1585106122 43864 316d0cb965f29ebe171a956d201e8169 ""
   "neurips_2019.sty" 1585106122 10473 d0228defbf1e7b2238b076efbb622e3c ""
   (generated)
   "/Users/junshenchen/on-topic-text-generation/tex/main.pdf"
   "main.out"
+  "main.pdf"
   "main.log"
   "/Users/junshenchen/on-topic-text-generation/tex/main.log"
   "main.aux"
-  "main.pdf"
